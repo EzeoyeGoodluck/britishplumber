@@ -1,0 +1,90 @@
+{
+  "name": "The British Plumber",
+  "url": "https://britishplumber.uk",
+  "topbar": "Quick solution to your plumbing and Heating",
+  "phone": "07950 486707",
+  "phoneTel": "+447950486707",
+  "landline": "01305 231567",
+  "landlineTel": "+441305231567",
+  "email": "durnovariauk@aol.com",
+  "formsubmitAddress": "durnovariauk@aol.com",
+  "locality": "Dorchester",
+  "region": "Dorset",
+  "postcode": "DT1",
+  "addressLine": "Dorchester, Dorset DT1",
+  "footerText": "Veteran owned plumbers and heating engineers based in Dorchester. Heritage, quality and reliability across Dorset.",
+  "nav": [
+    [
+      "home",
+      "Home",
+      "/"
+    ],
+    [
+      "about",
+      "About",
+      "/about/"
+    ],
+    [
+      "services",
+      "Services",
+      ""
+    ],
+    [
+      "contact",
+      "Contact",
+      "/contact/"
+    ]
+  ],
+  "services": [
+    [
+      "plumbing",
+      "Plumbing",
+      "/plumbing/"
+    ],
+    [
+      "central-heating",
+      "Central Heating",
+      "/central-heating/"
+    ],
+    [
+      "boiler-installation",
+      "Boiler Installations",
+      "/boiler-installation/"
+    ],
+    [
+      "boiler-repairs",
+      "Boiler Repairs",
+      "/boiler-repairs/"
+    ],
+    [
+      "emergency-call-out",
+      "Emergency Call Out",
+      "/emergency-call-out/"
+    ]
+  ],
+  "images": {
+    "logo": "/assets/img/logo.png",
+    "homeHero": "/assets/img/homeHero.jpg",
+    "homeAbout": "/assets/img/homeAbout.png",
+    "bathroom": "/assets/img/bathroom.jpg",
+    "tap": "/assets/img/tap.jpg",
+    "radiator": "/assets/img/radiator.jpg",
+    "boilerMan": "/assets/img/boilerMan.jpg",
+    "pipeRepair": "/assets/img/pipeRepair.jpg",
+    "leakyRoof": "/assets/img/leakyRoof.jpg",
+    "pliers": "/assets/img/pliers.jpg",
+    "boilerPanel": "/assets/img/boilerPanel.jpg",
+    "aboutHero": "/assets/img/aboutHero.png",
+    "aboutValues": "/assets/img/aboutValues.jpg",
+    "plumbingHero": "/assets/img/plumbingHero.png",
+    "plumbingBody": "/assets/img/plumbingBody.png",
+    "heatingHero": "/assets/img/heatingHero.png",
+    "heatingBody": "/assets/img/heatingBody.png",
+    "installBody": "/assets/img/installBody.png",
+    "repairsHero": "/assets/img/repairsHero.png",
+    "repairsBody": "/assets/img/repairsBody.png",
+    "radiatorRoom": "/assets/img/radiatorRoom.jpg",
+    "contactHero": "/assets/img/contactHero.png",
+    "ogImage": "/assets/img/og-image.jpg"
+  }
+}

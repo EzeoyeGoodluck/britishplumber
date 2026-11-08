@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://britishplumber.uk/sitemap.xml
