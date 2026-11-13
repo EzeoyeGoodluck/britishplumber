@@ -18,8 +18,9 @@
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css?v=76dfa0bd">
+  <link rel="stylesheet" href="/assets/css/theme.css?v=bde79a12">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,36 +36,32 @@
   }
   </script>
 </head>
-<body>
+<body class="theme">
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="topbar">
-    <div class="container">
-      <div class="topbar-msg">Quick solution to your plumbing and Heating</div>
-      <div class="topbar-right">Office: <a href="tel:+441305231567">01305 231567</a> &nbsp;·&nbsp; 24/7 mobile: <a href="tel:+447950486707">07950 486707</a></div>
-    </div>
-  </div>
-  <header class="site-header">
-    <div class="container header-main">
-      <a class="logo" href="/" aria-label="The British Plumber home"><img src="/assets/img/logo.png" alt="The British Plumber logo" width="96" height="96"></a>
-      <div class="header-contacts">
-        <a class="hc" href="mailto:durnovariauk@aol.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v.3l-10 6.3L2 5.8v-.3Zm0 2.7V18.5A1.5 1.5 0 0 0 3.5 20h17a1.5 1.5 0 0 0 1.5-1.5V8.2l-9.5 6a1 1 0 0 1-1 0L2 8.2Z"/></svg><span><small>Email Support</small><strong>durnovariauk@aol.com</strong></span></a>
-        <a class="hc" href="tel:+447950486707"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.2a1.6 1.6 0 0 1 1.9.9l1.6 3.7a1.6 1.6 0 0 1-.4 1.8L7.9 10.2a12.5 12.5 0 0 0 5.9 5.9l1.6-1.8a1.6 1.6 0 0 1 1.8-.4l3.7 1.6a1.6 1.6 0 0 1 .9 1.9l-.8 3a1.6 1.6 0 0 1-1.6 1.2C10.7 21.6 2.4 13.3 2.4 4.6A1.6 1.6 0 0 1 3.6 3l3-.8Z"/></svg><span><small>Get in Touch</small><strong>Phone : 07950 486707</strong></span></a>
-        <a class="hc hc--landline" href="tel:+441305231567"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.2a1.6 1.6 0 0 1 1.9.9l1.6 3.7a1.6 1.6 0 0 1-.4 1.8L7.9 10.2a12.5 12.5 0 0 0 5.9 5.9l1.6-1.8a1.6 1.6 0 0 1 1.8-.4l3.7 1.6a1.6 1.6 0 0 1 .9 1.9l-.8 3a1.6 1.6 0 0 1-1.6 1.2C10.7 21.6 2.4 13.3 2.4 4.6A1.6 1.6 0 0 1 3.6 3l3-.8Z"/></svg><span><small>Office</small><strong>01305 231567</strong></span></a>
-      </div>
-      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
-    </div>
-    <div class="container nav-row">
-      <nav class="main-nav" id="main-nav" aria-label="Main"><ul><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li class="has-dropdown"><button type="button" aria-expanded="false" aria-current="page">Services</button><ul class="dropdown"><li><a href="/plumbing/">Plumbing</a></li><li><a href="/central-heating/">Central Heating</a></li><li><a href="/boiler-installation/">Boiler Installations</a></li><li><a href="/boiler-repairs/">Boiler Repairs</a></li><li><a href="/emergency-call-out/" aria-current="page">Emergency Call Out</a></li></ul></li><li><a href="/contact/">Contact</a></li></ul></nav>
-      <div class="nav-accent" aria-hidden="true"></div>
+  <header class="mh">
+    <div class="mh-inner">
+      <a class="mh-logo" href="/" aria-label="The British Plumber home">
+        <img src="/assets/img/logo.png" alt="" width="56" height="56">
+        <span>The British Plumber</span>
+      </a>
+      <nav class="mh-nav" id="main-nav" aria-label="Main">
+        <ul><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li class="has-dropdown"><button type="button" aria-expanded="false" aria-current="page">Services</button><ul class="dropdown"><li><a href="/plumbing/">Plumbing</a></li><li><a href="/central-heating/">Central Heating</a></li><li><a href="/boiler-installation/">Boiler Installations</a></li><li><a href="/boiler-repairs/">Boiler Repairs</a></li><li><a href="/emergency-call-out/" aria-current="page">Emergency Call Out</a></li></ul></li><li><a href="/contact/">Contact</a></li></ul>
+      </nav>
+      <a class="mh-call" href="tel:+447950486707">
+        <span class="mh-call-label">24/7 emergency line</span>
+        <span class="mh-call-num">07950 486707</span>
+      </a>
+      <button class="nav-toggle mh-toggle" aria-label="Menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
     </div>
   </header>
 
   <main id="main">
-<section class="page-hero page-hero--center" style="--img: url('/assets/img/leakyRoof.jpg')">
+<section class="page-hero" style="--img: url('/assets/img/leakyRoof.jpg')">
   <div class="container">
+    <p class="h-oncall"><span class="h-dot" aria-hidden="true"></span>Answering emergency calls now, 24/7</p>
     <h1>Emergency Plumber in Dorchester</h1>
     <p>Burst pipe, major leak, no heating in freezing weather or a boiler that has failed completely. We answer the phone 24 hours a day, every day of the year, and we come out across Dorset. You will speak to an engineer, not an answering service.</p>
-    <div class="btn-row" style="justify-content:center;margin-top:28px"><a class="btn" href="tel:+447950486707">Call 07950 486707</a></div>
+    <div class="btn-row" style="margin-top:28px"><a class="btn" href="tel:+447950486707">Call 07950 486707</a></div>
   </div>
 </section>
 
@@ -114,7 +111,7 @@
 
 <section class="section section--soft">
   <div class="container">
-    <div class="section-head"><span class="subtitle">Why choose us</span><h2>Why choose us for an emergency call-out in Dorchester</h2></div>
+    <div class="section-head"><h2>Why choose us for an emergency call-out in Dorchester</h2></div>
     <div class="grid grid-4">
       <div class="feature"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><h3>Genuine 24/7 availability</h3><p>Not an answering machine. A real emergency line, 24 hours a day, every day of the year, including bank holidays.</p></div>
       <div class="feature"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg><h3>Cost agreed on the phone</h3><p>We tell you the cost on the phone, before we get in the van. No mid-job surprises.</p></div>
@@ -126,7 +123,7 @@
 
 <section class="section">
   <div class="container">
-    <div class="section-head"><span class="subtitle">FAQs</span><h2>Most Popular Questions</h2></div>
+    <div class="section-head"><h2>Most Popular Questions</h2></div>
     <div class="faq-wrap">
       <details open><summary>Are you really available 24 hours?</summary><p>Yes. We answer emergency calls 24 hours a day, every day of the year, including Christmas and bank holidays. That is not a marketing line, it is why we get called.</p></details>
       <details><summary>How quickly can you reach me?</summary><p>It depends where you are in Dorset and what we are already attending. We give you a realistic time on the phone. If we cannot get to you quickly enough, we say so rather than leave you waiting.</p></details>

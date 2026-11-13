@@ -1,8 +1,8 @@
 /* =========================================================
-   The British Plumber — homepage (modern layout)
-   Loaded only on the homepage, after styles.css.
+   The British Plumber — site theme (modern layout)
+   Loaded on every page, after styles.css.
    ========================================================= */
-.home {
+.theme {
   --ink: #010d1d;          /* brand navy, headings */
   --navy: #0b1d33;         /* hero & dark panels */
   --gold: #b7862a;         /* brand gold: rules, accents */
@@ -18,16 +18,16 @@
   color: var(--body);
   background: #fff;
 }
-.home h1, .home h2, .home h3, .home .h-phone-num, .home .h-promise, .home .mh-logo span, .home .mh-call-num {
+.theme h1, .theme h2, .theme h3, .theme .h-phone-num, .theme .h-promise, .theme .mh-logo span, .theme .mh-call-num {
   font-family: "Archivo", "Outfit", system-ui, sans-serif;
   font-stretch: 72%;
   font-variation-settings: "wdth" var(--cond);
   color: var(--ink);
   letter-spacing: -.01em;
 }
-.home h2 { font-size: clamp(2rem, 3.6vw, 3rem); font-weight: 800; line-height: 1.02; margin: 0 0 .5em; }
-.home h3 { font-size: 1.35rem; font-weight: 800; line-height: 1.15; }
-.home :focus-visible { outline: 3px solid var(--gold-btn); outline-offset: 3px; }
+.theme h2 { font-size: clamp(2rem, 3.6vw, 3rem); font-weight: 800; line-height: 1.02; margin: 0 0 .5em; }
+.theme h3 { font-size: 1.35rem; font-weight: 800; line-height: 1.15; }
+.theme :focus-visible { outline: 3px solid var(--gold-btn); outline-offset: 3px; }
 .h-wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
 .h-head { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; margin-bottom: 48px; }
 .h-head h2 { margin: 0; }
@@ -55,20 +55,20 @@
 .mh-call:hover { color: var(--red); }
 .mh-call-label { font-size: .78rem; color: var(--body); }
 .mh-call-num { font-size: 1.45rem; font-weight: 800; }
-.home .mh-toggle { border-color: var(--line); }
-.home .mh-toggle span, .home .mh-toggle span::before, .home .mh-toggle span::after { background: var(--ink); }
-.home.nav-open .mh-toggle span { background: transparent; }
+.theme .mh-toggle { border-color: var(--line); }
+.theme .mh-toggle span, .theme .mh-toggle span::before, .theme .mh-toggle span::after { background: var(--ink); }
+.theme.nav-open .mh-toggle span { background: transparent; }
 @media (max-width: 1040px) { .mh-logo span { display: none; } }
 @media (max-width: 900px) {
   .mh-inner { gap: 14px; flex-wrap: wrap; }
   .mh-call { margin-left: auto; padding: 4px 12px; }
   .mh-call-num { font-size: 1.2rem; }
-  .home .mh-toggle { display: block; margin-left: 0; }
+  .theme .mh-toggle { display: block; margin-left: 0; }
   .mh-nav { display: none; order: 5; width: 100%; margin: 0; padding: 4px 0 12px; }
-  .home.nav-open .mh-nav { display: block; }
+  .theme.nav-open .mh-nav { display: block; }
   .mh-nav > ul { flex-direction: column; }
   .mh-nav a, .mh-nav button { width: 100%; padding: 12px 4px; font-size: 1.05rem; }
-  .home .mh-nav .dropdown a { color: var(--body); padding: 8px 4px; }
+  .theme .mh-nav .dropdown a { color: var(--body); padding: 8px 4px; }
 }
 @media (max-width: 420px) { .mh-call-label { display: none; } }
 
@@ -242,6 +242,137 @@
 @media (max-width: 640px) { .h-final .h-phone { display: grid; margin-right: 0; } }
 
 /* Mobile call bar (shared markup, restyled for the homepage) */
-.home .call-bar { background: #fff; border-top: 1px solid var(--line); box-shadow: 0 -6px 20px rgba(1,13,29,.08); }
-.home .call-bar .btn { font: 700 1rem "Archivo", system-ui, sans-serif; text-transform: none; letter-spacing: 0; border-radius: 4px; background: var(--red); border-color: var(--red); color: #fff; }
-.home .call-bar .btn--outline { background: #fff; border-color: var(--ink); color: var(--ink); }
+.theme .call-bar { background: #fff; border-top: 1px solid var(--line); box-shadow: 0 -6px 20px rgba(1,13,29,.08); }
+.theme .call-bar .btn { font: 700 1rem "Archivo", system-ui, sans-serif; text-transform: none; letter-spacing: 0; border-radius: 4px; background: var(--red); border-color: var(--red); color: #fff; }
+.theme .call-bar .btn--outline { background: #fff; border-color: var(--ink); color: var(--ink); }
+
+/* =========================================================
+   Inner pages: bring the shared components in line with the homepage
+   ========================================================= */
+.theme .container { max-width: var(--wrap); padding: 0 24px; }
+.theme .section { padding: clamp(64px, 8vw, 104px) 0; }
+.theme .section--soft { background: var(--paper); }
+.theme p { color: inherit; }
+.theme .main p, .theme .section p { max-width: 68ch; }
+
+/* Headings & section heads */
+.theme h1 { font-weight: 800; line-height: .98; }
+.theme .section-head { text-align: left; margin: 0 0 44px; max-width: 760px; }
+.theme .section-head h2 { margin: 0; }
+.theme .section-head p { margin: 14px 0 0; }
+
+/* Page banners — same treatment as the homepage hero */
+.theme .page-hero {
+  text-align: left; color: rgba(255,255,255,.86); padding: clamp(64px, 8vw, 112px) 0 clamp(60px, 7vw, 96px);
+  background:
+    linear-gradient(90deg, rgba(11,29,51,.97) 0%, rgba(11,29,51,.9) 40%, rgba(11,29,51,.4) 75%, rgba(11,29,51,.15) 100%),
+    var(--img) right center / cover no-repeat;
+}
+.theme .page-hero h1 { color: #fff; font-size: clamp(2.4rem, 4.8vw, 4.2rem); max-width: 16ch; margin: 0 0 20px; }
+.theme .page-hero p { color: rgba(255,255,255,.86); font-size: 1.12rem; max-width: 52ch; margin: 0; }
+.theme .page-hero .h-oncall { color: #fff; margin: 0 0 22px; font-size: .92rem; max-width: none; }
+@media (max-width: 760px) {
+  .theme .page-hero { background: linear-gradient(rgba(11,29,51,.86), rgba(11,29,51,.86)), var(--img) 70% center / cover no-repeat; padding: 48px 0 52px; }
+}
+
+/* Buttons */
+.theme .btn {
+  border-radius: 6px; text-transform: none; letter-spacing: 0; padding: 15px 24px;
+  font: 700 1rem "Archivo", system-ui, sans-serif;
+  background: var(--gold-btn); border-color: var(--gold-btn); color: var(--ink);
+}
+.theme .btn:hover { background: #e7b858; border-color: #e7b858; color: var(--ink); }
+.theme .btn--outline { background: transparent; border-color: rgba(255,255,255,.55); color: #fff; }
+.theme .btn--outline:hover { background: rgba(255,255,255,.08); border-color: #fff; color: #fff; }
+.theme .link-more { border-bottom-color: var(--gold); color: var(--ink); text-transform: none; letter-spacing: 0; }
+
+/* Text helpers */
+.theme .lead-quote {
+  border-left: 0; padding: 18px 0 0; border-top: 4px solid var(--gold); color: var(--ink);
+  font-family: "Archivo", system-ui, sans-serif; font-stretch: 72%; font-variation-settings: "wdth" 72;
+  font-size: clamp(1.5rem, 2.4vw, 2rem); font-weight: 700; line-height: 1.12;
+}
+.theme .tick-list li { color: var(--ink); }
+.theme .tick-list li::before {
+  background: var(--gold-btn) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23010d1d' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4L18 8'/%3E%3C/svg%3E") center / 11px no-repeat;
+}
+.theme .split-media img { border-radius: 8px; }
+
+/* Facts strip (About) — matches the homepage facts line */
+.theme .stats { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.theme .stats .grid { padding: 26px 0; gap: 0; }
+.theme .stat { text-align: left; padding: 0 24px; border-right: 0; border-left: 1px solid var(--line); }
+.theme .stat:first-child { border-left: 0; padding-left: 0; }
+.theme .stat strong { color: var(--ink); font-size: 1.9rem; font-weight: 800; font-stretch: 72%; font-variation-settings: "wdth" 72; }
+.theme .stat span { color: var(--body); font-size: .95rem; font-weight: 400; letter-spacing: 0; text-transform: none; }
+@media (max-width: 1000px) { .theme .stat { border-left: 0; padding: 8px 0; } }
+
+/* Value cards (About) */
+.theme .value { border-left: 0; border-top: 3px solid var(--gold); border-radius: 0 0 8px 8px; box-shadow: none; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); border-left: 1px solid var(--line); }
+
+/* Service pages: sidebar */
+.theme .service-layout .main img { border-radius: 8px; }
+.theme .side-box { border-radius: 8px; background: #fff; }
+.theme .side-box h3 { text-transform: none; font-size: 1.4rem; }
+.theme .side-box a { font-weight: 500; }
+.theme .side-box a::before { color: var(--gold); }
+.theme .side-cta { border-radius: 8px; text-align: left; padding: 32px 28px;
+  background: linear-gradient(rgba(11,29,51,.9), rgba(11,29,51,.9)), var(--img) center / cover no-repeat; }
+.theme .side-cta h3 { color: #fff; font-size: 1.5rem; }
+.theme .side-cta p { color: #fff; font-family: "Archivo", system-ui, sans-serif; font-stretch: 72%; font-variation-settings: "wdth" 72; font-size: 1.6rem; font-weight: 800; margin: 2px 0 18px; }
+.theme .side-cta .btn { width: 100%; }
+
+/* Call band — same as the homepage's closing band */
+.theme .band {
+  padding: clamp(72px, 9vw, 120px) 0; color: rgba(255,255,255,.86);
+  background: linear-gradient(90deg, var(--navy) 0%, rgba(11,29,51,.94) 45%, rgba(11,29,51,.55) 100%), var(--img) center / cover no-repeat;
+}
+.theme .band h2 { color: #fff; max-width: 18ch; }
+.theme .band p, .theme .band ol { color: rgba(255,255,255,.86); max-width: 56ch; }
+.theme .band ol strong { color: #fff; }
+@media (max-width: 760px) { .theme .band { background: linear-gradient(rgba(11,29,51,.9), rgba(11,29,51,.9)), var(--img) center / cover no-repeat; } }
+
+/* "Why choose us" features — open layout like the homepage, no boxed cards */
+.theme .section--soft .grid-4:has(.feature) { gap: 0; background: #fff; border: 1px solid var(--line); border-radius: 8px; }
+.theme .feature { text-align: left; background: transparent; box-shadow: none; border: 0; border-left: 1px solid var(--line); border-radius: 0; padding: 30px 26px; }
+.theme .feature:first-child { border-left: 0; }
+.theme .feature:hover { border-color: var(--line); }
+.theme .feature svg { margin: 0 0 18px; width: 34px; height: 34px; stroke: var(--gold); stroke-width: 1.8; }
+.theme .feature h3 { font-size: 1.3rem; }
+@media (max-width: 1000px) {
+  .theme .feature { border-left: 0; border-top: 1px solid var(--line); }
+  .theme .feature:nth-child(-n+2) { border-top: 0; }
+  .theme .feature:nth-child(even) { border-left: 1px solid var(--line); }
+}
+@media (max-width: 640px) {
+  .theme .feature, .theme .feature:nth-child(even) { border-left: 0; }
+  .theme .feature:nth-child(2) { border-top: 1px solid var(--line); }
+}
+
+/* FAQs */
+.theme .faq-wrap { margin: 0; max-width: 900px; }
+.theme .faq-wrap details { border-radius: 8px; }
+.theme .faq-wrap summary { font-size: 1.08rem; }
+.theme .faq-wrap summary::after { border-radius: 50%; background: var(--paper); color: var(--ink); border: 1px solid var(--line); }
+.theme .faq-wrap details[open] summary { color: var(--ink); }
+.theme .faq-wrap details[open] summary::after { background: var(--gold-btn); border-color: var(--gold-btn); }
+
+/* Contact page */
+.theme .info-card { border-radius: 8px; box-shadow: none; border: 1px solid var(--line); }
+.theme .info-card .ico { border-radius: 8px; background: var(--gold-btn); }
+.theme .info-card .ico svg { fill: var(--ink); }
+.theme .info-card a { color: var(--ink); font-weight: 600; }
+.theme .form-card { border-radius: 8px; background: var(--navy); }
+.theme .form-card h2 { color: #fff; font-size: clamp(1.8rem, 3vw, 2.4rem); }
+.theme .field label { font-weight: 600; }
+.theme .field input, .theme .field textarea { border-radius: 6px; font-family: "Archivo", system-ui, sans-serif; }
+.theme .field input:focus, .theme .field textarea:focus { border-color: var(--gold-btn); }
+
+/* 404 */
+.theme .notfound .big { font-family: "Archivo", system-ui, sans-serif; font-stretch: 72%; font-variation-settings: "wdth" 72; font-weight: 800; }
+.theme .notfound h1 { font-size: clamp(2rem, 4vw, 3rem); }
+
+/* Footer: keep headings visible and spacing intact under the theme */
+.theme .site-footer h3 { color: #fff; font-size: 1.3rem; }
+.theme .footer-main { padding: 70px 24px 50px; }
+.theme .site-footer p { color: rgba(255,255,255,.8); }

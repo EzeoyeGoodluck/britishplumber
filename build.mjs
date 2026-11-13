@@ -64,7 +64,7 @@ const sitemap = [];
 
 // Cache-busting: add a short content hash to CSS/JS links so browsers fetch new versions
 const assetVersion = {};
-for (const a of ['assets/css/styles.css', 'assets/css/home.css', 'assets/js/main.js']) {
+for (const a of ['assets/css/styles.css', 'assets/css/theme.css', 'assets/js/main.js']) {
   const f = path.join(root, 'public', a);
   if (fs.existsSync(f)) assetVersion['/' + a] = crypto.createHash('md5').update(fs.readFileSync(f)).digest('hex').slice(0, 8);
 }
