@@ -306,3 +306,18 @@ ul { margin: 0; padding: 0; }
 @media (max-width: 1180px) { .hc--landline { display: none; } }
 .main-nav { margin-left: 112px; }
 @media (max-width: 900px) { .main-nav { margin-left: 0; } }
+
+/* WhatsApp chat button (every page) */
+.wa-chat {
+  position: fixed; right: 20px; bottom: 20px; z-index: 80;
+  display: inline-flex; align-items: center; gap: 10px; padding: 12px 20px 12px 14px;
+  background: #25d366; color: #0b3d1f; border-radius: 999px; font-weight: 700; font-size: 1rem;
+  box-shadow: 0 10px 28px rgba(0,0,0,.22); transition: transform .15s, background .15s;
+}
+.wa-chat:hover { background: #20bd5a; color: #0b3d1f; transform: translateY(-2px); }
+.wa-chat:focus-visible { outline: 3px solid #010d1d; outline-offset: 3px; }
+.wa-chat svg { width: 26px; height: 26px; fill: currentColor; flex: none; }
+@media (max-width: 760px) {
+  .wa-chat { bottom: 86px; right: 14px; padding: 13px; }
+  .wa-chat span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+}

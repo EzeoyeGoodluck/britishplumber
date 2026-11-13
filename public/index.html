@@ -18,8 +18,9 @@
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,81 +36,96 @@
   }
   </script>
 </head>
-<body>
+<body class="home">
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="topbar">
-    <div class="container">
-      <div class="topbar-msg">Quick solution to your plumbing and Heating</div>
-      <div class="topbar-right">Office: <a href="tel:+441305231567">01305 231567</a> &nbsp;·&nbsp; 24/7 mobile: <a href="tel:+447950486707">07950 486707</a></div>
-    </div>
-  </div>
-  <header class="site-header">
-    <div class="container header-main">
-      <a class="logo" href="/" aria-label="The British Plumber home"><img src="/assets/img/logo.png" alt="The British Plumber logo" width="96" height="96"></a>
-      <div class="header-contacts">
-        <a class="hc" href="mailto:durnovariauk@aol.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v.3l-10 6.3L2 5.8v-.3Zm0 2.7V18.5A1.5 1.5 0 0 0 3.5 20h17a1.5 1.5 0 0 0 1.5-1.5V8.2l-9.5 6a1 1 0 0 1-1 0L2 8.2Z"/></svg><span><small>Email Support</small><strong>durnovariauk@aol.com</strong></span></a>
-        <a class="hc" href="tel:+447950486707"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.2a1.6 1.6 0 0 1 1.9.9l1.6 3.7a1.6 1.6 0 0 1-.4 1.8L7.9 10.2a12.5 12.5 0 0 0 5.9 5.9l1.6-1.8a1.6 1.6 0 0 1 1.8-.4l3.7 1.6a1.6 1.6 0 0 1 .9 1.9l-.8 3a1.6 1.6 0 0 1-1.6 1.2C10.7 21.6 2.4 13.3 2.4 4.6A1.6 1.6 0 0 1 3.6 3l3-.8Z"/></svg><span><small>Get in Touch</small><strong>Phone : 07950 486707</strong></span></a>
-        <a class="hc hc--landline" href="tel:+441305231567"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.2a1.6 1.6 0 0 1 1.9.9l1.6 3.7a1.6 1.6 0 0 1-.4 1.8L7.9 10.2a12.5 12.5 0 0 0 5.9 5.9l1.6-1.8a1.6 1.6 0 0 1 1.8-.4l3.7 1.6a1.6 1.6 0 0 1 .9 1.9l-.8 3a1.6 1.6 0 0 1-1.6 1.2C10.7 21.6 2.4 13.3 2.4 4.6A1.6 1.6 0 0 1 3.6 3l3-.8Z"/></svg><span><small>Office</small><strong>01305 231567</strong></span></a>
-      </div>
-      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
-    </div>
-    <div class="container nav-row">
-      <nav class="main-nav" id="main-nav" aria-label="Main"><ul><li><a href="/" aria-current="page">Home</a></li><li><a href="/about/">About</a></li><li class="has-dropdown"><button type="button" aria-expanded="false">Services</button><ul class="dropdown"><li><a href="/plumbing/">Plumbing</a></li><li><a href="/central-heating/">Central Heating</a></li><li><a href="/boiler-installation/">Boiler Installations</a></li><li><a href="/boiler-repairs/">Boiler Repairs</a></li><li><a href="/emergency-call-out/">Emergency Call Out</a></li></ul></li><li><a href="/contact/">Contact</a></li></ul></nav>
-      <div class="nav-accent" aria-hidden="true"></div>
+  <header class="mh">
+    <div class="mh-inner">
+      <a class="mh-logo" href="/" aria-label="The British Plumber home">
+        <img src="/assets/img/logo.png" alt="" width="56" height="56">
+        <span>The British Plumber</span>
+      </a>
+      <nav class="mh-nav" id="main-nav" aria-label="Main">
+        <ul><li><a href="/" aria-current="page">Home</a></li><li><a href="/about/">About</a></li><li class="has-dropdown"><button type="button" aria-expanded="false">Services</button><ul class="dropdown"><li><a href="/plumbing/">Plumbing</a></li><li><a href="/central-heating/">Central Heating</a></li><li><a href="/boiler-installation/">Boiler Installations</a></li><li><a href="/boiler-repairs/">Boiler Repairs</a></li><li><a href="/emergency-call-out/">Emergency Call Out</a></li></ul></li><li><a href="/contact/">Contact</a></li></ul>
+      </nav>
+      <a class="mh-call" href="tel:+447950486707">
+        <span class="mh-call-label">24/7 emergency line</span>
+        <span class="mh-call-num">07950 486707</span>
+      </a>
+      <button class="nav-toggle mh-toggle" aria-label="Menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
     </div>
   </header>
 
   <main id="main">
-<section class="hero" style="--img: url('/assets/img/homeHero.jpg')">
-  <div class="container">
-    <div class="hero-content">
-      <span class="subtitle">Welcome to The British Plumber</span>
-      <h1>Your trusted plumber in Dorchester, ready when you need us</h1>
-      <p>Veteran owned, Dorset based and available 24 hours a day. From a dripping tap to a full central heating installation.</p>
-      <div class="btn-row">
-        <a class="btn" href="tel:+447950486707">Call 07950 486707</a>
-        <a class="btn btn--outline" href="/contact/">Send a message</a>
-      </div>
+<section class="h-hero" style="--img: url('/assets/img/homeHero.jpg')">
+  <div class="h-hero-inner">
+    <p class="h-oncall"><span class="h-dot" aria-hidden="true"></span>Engineers on call 24/7 across Dorset</p>
+    <h1>Your trusted plumber in Dorchester, ready when you need&nbsp;us</h1>
+    <p class="h-hero-sub">Veteran owned, Dorset based and available 24 hours a day. From a dripping tap to a full central heating installation.</p>
+    <div class="h-actions">
+      <a class="h-btn h-btn--gold" href="tel:+447950486707">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.2a1.6 1.6 0 0 1 1.9.9l1.6 3.7a1.6 1.6 0 0 1-.4 1.8L7.9 10.2a12.5 12.5 0 0 0 5.9 5.9l1.6-1.8a1.6 1.6 0 0 1 1.8-.4l3.7 1.6a1.6 1.6 0 0 1 .9 1.9l-.8 3a1.6 1.6 0 0 1-1.6 1.2C10.7 21.6 2.4 13.3 2.4 4.6A1.6 1.6 0 0 1 3.6 3l3-.8Z"/></svg>
+        Call 07950 486707
+      </a>
+      <a class="h-btn h-btn--ghost" href="/contact/">Send a message</a>
     </div>
+    <ul class="h-trust">
+      <li>Gas Safe registered</li>
+      <li>Veteran owned</li>
+      <li>Fixed price before we start</li>
+    </ul>
   </div>
 </section>
 
-<section class="section">
-  <div class="container split">
-    <div class="split-media">
-      <img src="/assets/img/homeAbout.png" alt="Gas hob flame — plumbing and heating engineers in Dorchester" loading="lazy">
-      <div class="badge-card"><span class="subtitle">Quality Service</span><strong>Plumbing &amp; Heating Experts in Dorchester</strong></div>
-    </div>
-    <div>
-      <span class="subtitle">Who we are</span>
+<section class="h-facts" aria-label="At a glance">
+  <ul>
+    <li><strong>24/7</strong> emergency call-out</li>
+    <li><strong>4,000+</strong> jobs completed</li>
+    <li><strong>5-star</strong> service</li>
+    <li><strong>25+ years</strong> combined experience</li>
+  </ul>
+</section>
+
+<section class="h-intro">
+  <div class="h-wrap h-intro-grid">
+    <blockquote class="h-promise">We turn up when we say we will, we quote before we start, and we leave your home as we found it.</blockquote>
+    <div class="h-intro-body">
       <h2>Plumbing and heating engineers Dorchester households actually trust</h2>
-      <p class="lead-quote">We turn up when we say we will, we quote before we start, and we leave your home as we found it.</p>
       <p>We combine the old values of honesty, reliability and craftsmanship with current qualifications and modern equipment. Homeowners, landlords and commercial clients across Dorset call us because we explain the problem in plain English, fix it properly the first time, and stand behind the work afterwards.</p>
       <p>As a veteran owned business, integrity is not a marketing line for us, it is the standard we were trained to.</p>
-      <a class="btn" href="/about/">About us</a>
+      <a class="h-link" href="/about/">About us</a>
     </div>
+    <figure class="h-intro-photo">
+      <img src="/assets/img/homeAbout.png" alt="Blue gas flame on a hob" loading="lazy" width="900" height="900">
+    </figure>
   </div>
 </section>
 
-<section class="stats">
-  <div class="container grid grid-4">
-    <div class="stat"><strong>24/7</strong><span>Emergency call-out</span></div>
-    <div class="stat"><strong>4K+</strong><span>Projects done</span></div>
-    <div class="stat"><strong>5★</strong><span>Star service</span></div>
-    <div class="stat"><strong>25+</strong><span>Combined experience</span></div>
-  </div>
-</section>
-
-<section class="section section--soft">
-  <div class="container split">
-    <div>
-      <span class="subtitle">Our services</span>
+<section class="h-services" id="services">
+  <div class="h-wrap">
+    <div class="h-head">
       <h2>One local team for plumbing, heating and boilers across Dorset</h2>
-      <p>Most Dorchester properties do not need three different trades.</p>
-      <p>We cover the plumbing, the heating and the boiler under one roof, which means one point of contact, one quote and one team accountable for the result.</p>
-      <p>Whether you are a homeowner with a cold radiator, a landlord with a gas safety deadline, or a business that cannot afford downtime, we work to the same standard.</p>
-      <hr class="divider">
-      <ul class="tick-list tick-list--2">
+      <p>Most Dorchester properties do not need three different trades. We cover the plumbing, the heating and the boiler under one roof: one point of contact, one quote and one team accountable for the result.</p>
+    </div>
+
+    <div class="h-services-grid">
+      <a class="h-emergency" href="/emergency-call-out/" style="--img: url('/assets/img/leakyRoof.jpg')">
+        <span class="h-emergency-tag">Emergency call out</span>
+        <span class="h-emergency-title">Burst pipe or boiler failure right now?</span>
+        <span class="h-emergency-text">Burst pipes and boiler failures do not wait for office hours. We answer the phone 24 hours a day, every day of the year.</span>
+        <span class="h-emergency-cta">What to do while you wait</span>
+      </a>
+
+      <ul class="h-rows">
+        <li><a href="/plumbing/"><img src="/assets/img/tap.jpg" alt="" loading="lazy" width="160" height="160"><span><strong>Plumbing</strong>Leaks, blockages, taps, toilets and full bathroom installations. Fast, tidy repairs for homes and businesses across Dorchester.</span></a></li>
+        <li><a href="/central-heating/"><img src="/assets/img/radiator.jpg" alt="" loading="lazy" width="160" height="160"><span><strong>Central heating</strong>New systems, upgrades, radiators, controls and powerflushing. Get your home warm again and keep the running costs down.</span></a></li>
+        <li><a href="/boiler-installation/"><img src="/assets/img/boilerMan.jpg" alt="" loading="lazy" width="160" height="160"><span><strong>Boiler installations</strong>A new boiler sized correctly, installed cleanly and commissioned properly, with a fixed written quote after a free survey.</span></a></li>
+        <li><a href="/boiler-repairs/"><img src="/assets/img/pipeRepair.jpg" alt="" loading="lazy" width="160" height="160"><span><strong>Boiler repairs</strong>No heating, no hot water, or a fault code you do not recognise. We diagnose and repair most makes, often on the first visit.</span></a></li>
+      </ul>
+    </div>
+
+    <div class="h-covers">
+      <h3>Everything we cover</h3>
+      <ul>
         <li>Leak detection and pipe repairs</li>
         <li>Taps, toilets and bathroom installations</li>
         <li>Central heating installation and upgrades</li>
@@ -120,82 +136,89 @@
         <li>Drain and pipe cleaning</li>
       </ul>
     </div>
-    <div class="split-media"><img src="/assets/img/bathroom.jpg" alt="Modern bathroom installation" loading="lazy"></div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="subtitle">What do we do</span>
-      <h2>Delivering plumbing and heating services beyond expectations</h2>
+<section class="h-why">
+  <div class="h-wrap h-why-grid">
+    <div class="h-why-head">
+      <h2>Why Dorset homeowners and landlords choose us</h2>
+      <p>There is no shortage of plumbers in Dorset. What is harder to find is one who answers the phone, arrives when promised, and charges what was quoted. We built this business around those three things.</p>
     </div>
-    <div class="services-grid">
-      <article class="service-card"><img src="/assets/img/tap.jpg" alt="Water flowing from a basin mixer tap" loading="lazy"><div class="body"><h3>Plumbing</h3><p>Leaks, blockages, taps, toilets and full bathroom installations. Fast, tidy plumbing repairs for homes and businesses across Dorchester.</p><a class="link-more" href="/plumbing/">Learn more →</a></div></article>
-      <article class="service-card"><img src="/assets/img/radiator.jpg" alt="Radiator thermostat valve" loading="lazy"><div class="body"><h3>Central Heating</h3><p>New systems, upgrades, radiators, controls and powerflushing. Get your Dorset home warm again and keep the running costs down.</p><a class="link-more" href="/central-heating/">Learn more →</a></div></article>
-      <article class="service-card"><img src="/assets/img/boilerMan.jpg" alt="Engineer adjusting a boiler" loading="lazy"><div class="body"><h3>Boiler Installations</h3><p>A new boiler sized correctly, installed cleanly and commissioned properly, with a fixed written quote after a free survey.</p><a class="link-more" href="/boiler-installation/">Learn more →</a></div></article>
-      <article class="service-card"><img src="/assets/img/pipeRepair.jpg" alt="Plumber repairing a pipe" loading="lazy"><div class="body"><h3>Boiler Repairs</h3><p>No heating, no hot water, or a fault code you do not recognise. We diagnose and repair most makes, often on the first visit.</p><a class="link-more" href="/boiler-repairs/">Learn more →</a></div></article>
-      <article class="service-card"><img src="/assets/img/leakyRoof.jpg" alt="Water leaking through a ceiling" loading="lazy"><div class="body"><h3>Emergency Call Out</h3><p>Burst pipes and boiler failures do not wait for office hours. We answer the phone 24 hours a day, every day of the year.</p><a class="link-more" href="/emergency-call-out/">Learn more →</a></div></article>
-    </div>
+    <dl class="h-why-list">
+      <div><dt>Veteran owned integrity</dt><dd>Military standards of discipline and accountability, applied to your home. We do what we say, on the day we said it.</dd></div>
+      <div><dt>Qualified and insured</dt><dd>Gas Safe registered, fully insured, and every job guaranteed. Ask to see the paperwork, we are happy to show it.</dd></div>
+      <div><dt>Clear, honest pricing</dt><dd>We quote before we start, we explain what we found, and we do not invent extras once the floorboards are up.</dd></div>
+      <div><dt>Genuine 24/7 availability</dt><dd>Not an answering machine. A real emergency line, 24 hours a day, every day of the year, including bank holidays.</dd></div>
+    </dl>
   </div>
 </section>
 
-<section class="band" style="--img: url('/assets/img/pliers.jpg')">
-  <div class="container">
-    <h2>Whatever your plumbing or heating problem, we have got you covered</h2>
-    <p>One call reaches a qualified engineer, not a call centre. Tell us what is happening and we will tell you honestly whether it is an emergency, a repair or something that can wait until Tuesday. That is how we have built our reputation in Dorchester, and it is why customers call us back.</p>
-    <a class="btn" href="tel:+447950486707">Call 07950 486707</a>
-  </div>
-</section>
-
-<section class="section section--soft">
-  <div class="container">
-    <div class="why-head">
-      <div><span class="subtitle">Why choose us</span><h2>Why Dorset homeowners and landlords choose The British Plumber</h2></div>
-      <p>There is no shortage of plumbers in Dorset. What is harder to find is one who answers the phone, arrives when promised, and charges what was quoted. We built this business around those three things, because they are the three things every customer we have ever met actually wanted.</p>
-    </div>
-    <div class="grid grid-4">
-      <div class="feature"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 2v5M12 17v5M2 12h5M17 12h5"/></svg><h3>Veteran owned integrity</h3><p>Military standards of discipline and accountability, applied to your home. We do what we say, on the day we said it.</p></div>
-      <div class="feature"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg><h3>Qualified and insured</h3><p>Gas Safe registered, fully insured, and every job guaranteed. Ask to see the paperwork, we are happy to show it.</p></div>
-      <div class="feature"><svg viewBox="0 0 24 24"><path d="M16 5.5A4.5 4.5 0 0 0 8 8.5V19M6 13h8M6 19h12"/></svg><h3>Clear, honest pricing</h3><p>We quote before we start, we explain what we found, and we do not invent extras once the floorboards are up.</p></div>
-      <div class="feature"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><h3>Genuine 24/7 availability</h3><p>Not an answering machine. A real emergency line, 24 hours a day, every day of the year, including bank holidays.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="subtitle">How it works</span>
-      <h2>Getting your plumbing or heating sorted, without the runaround</h2>
+<section class="h-steps">
+  <div class="h-wrap">
+    <div class="h-head">
+      <h2>Getting it sorted, without the runaround</h2>
       <p>No phone tag, no vague windows, no waiting in all day. Four steps from your first call to a finished job you are happy with.</p>
     </div>
-    <div class="grid grid-4">
-      <div class="step"><span class="num">Step 1</span><h3>Call or message us</h3><p>Ring <a href="tel:+447950486707">07950 486707</a> or send a message. You will speak to an engineer who understands the problem, not a scheduler reading a script.</p></div>
-      <div class="step"><span class="num">Step 2</span><h3>Get a clear quote</h3><p>We assess the job, explain the options in plain English and give you a price before any work starts. If it is a simple fix, we will tell you that too.</p></div>
-      <div class="step"><span class="num">Step 3</span><h3>We do the work</h3><p>Qualified, insured and equipped. We protect your floors, we clear up after ourselves, and we test everything before we leave.</p></div>
-      <div class="step"><span class="num">Step 4</span><h3>Guaranteed and aftercare</h3><p>Every job is guaranteed and we are one call away if anything is not right. Most of our work now comes from customers who came back.</p></div>
+    <ol class="h-timeline">
+      <li><h3>Call or message us</h3><p>Ring <a href="tel:+447950486707">07950 486707</a> or send a message. You will speak to an engineer who understands the problem, not a scheduler reading a script.</p></li>
+      <li><h3>Get a clear quote</h3><p>We assess the job, explain the options in plain English and give you a price before any work starts. If it is a simple fix, we will tell you that too.</p></li>
+      <li><h3>We do the work</h3><p>Qualified, insured and equipped. We protect your floors, we clear up after ourselves, and we test everything before we leave.</p></li>
+      <li><h3>Guaranteed and aftercare</h3><p>Every job is guaranteed and we are one call away if anything is not right. Most of our work now comes from customers who came back.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="h-reviews" id="reviews">
+  <div class="h-wrap">
+    <div class="h-head">
+      <h2>What our customers say</h2>
+      <p>Real reviews from homeowners and landlords across Dorset.</p>
+    </div>
+    <div class="h-reviews-grid">
+      <aside class="h-gpanel">
+        <p class="h-gsource">Google reviews</p>
+        <p class="h-gnote">Customers rate us on Google for turning up on time, fixed prices and tidy work.</p><div class="h-gbtns"><a class="h-btn h-btn--gold" href="https://www.google.com/search?q=The%20British%20Plumber%20Dorchester" target="_blank" rel="noopener">Read all reviews on Google</a></div>
+      </aside>
+      <div>
+        <div class="h-rcards">
+        <figure class="h-rcard">
+          <div class="h-rwho"><span class="h-ravatar" style="background:#1f6f5c" aria-hidden="true">O</span><div><strong>Olivia</strong><small>Customer review</small></div></div>
+          <div class="h-rstars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>We had a leaking pipe behind our bathroom wall, and the team repaired it without any fuss. Great communication, quality workmanship, and a very fair price. We wouldn&#39;t hesitate to use them again!</blockquote>
+          <figcaption>Job: <b>Leak repair</b></figcaption>
+        </figure>
+        <figure class="h-rcard">
+          <div class="h-rwho"><span class="h-ravatar" style="background:#7a3e9d" aria-hidden="true">M</span><div><strong>Madison</strong><small>Customer review</small></div></div>
+          <div class="h-rstars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>Fantastic service from start to finish. The new boiler was installed quickly, everything was left spotless, and the team explained everything clearly. Highly recommended!</blockquote>
+          <figcaption>Job: <b>Boiler installation</b></figcaption>
+        </figure>
+        <figure class="h-rcard">
+          <div class="h-rwho"><span class="h-ravatar" style="background:#b4502a" aria-hidden="true">R</span><div><strong>Robert</strong><small>Customer review</small></div></div>
+          <div class="h-rstars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>I had an emergency leak, and they arrived quickly. The problem was fixed efficiently, and the service was professional throughout. Excellent company!</blockquote>
+          <figcaption>Job: <b>Emergency call-out</b></figcaption>
+        </figure>
+        </div>
+        <ul class="h-rtrust"><li>Gas Safe registered</li><li>Fully insured</li><li>Every job guaranteed</li></ul>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section section--soft">
-  <div class="container">
-    <div class="section-head">
-      <span class="subtitle">Testimonial</span>
-      <h2>Honest reviews from our clients who have used our services</h2>
-    </div>
-    <div class="grid grid-3">
-      <figure class="quote-card" style="margin:0"><div class="stars" aria-label="5 stars">★★★★★</div><blockquote>Fantastic service from start to finish. The new boiler was installed quickly, everything was left spotless, and the team explained everything clearly. Highly recommended!</blockquote><cite>Madison</cite></figure>
-      <figure class="quote-card" style="margin:0"><div class="stars" aria-label="5 stars">★★★★★</div><blockquote>I had an emergency leak, and they arrived quickly. The problem was fixed efficiently, and the service was professional throughout. Excellent company!</blockquote><cite>Robert</cite></figure>
-      <figure class="quote-card" style="margin:0"><div class="stars" aria-label="5 stars">★★★★★</div><blockquote>We had a leaking pipe behind our bathroom wall, and the team repaired it without any fuss. Great communication, quality workmanship, and a very fair price. We wouldn't hesitate to use them again!</blockquote><cite>Olivia</cite></figure>
-    </div>
+<section class="h-final" style="--img: url('/assets/img/pliers.jpg')">
+  <div class="h-wrap">
+    <h2>Whatever your plumbing or heating problem, we have got you covered</h2>
+    <p>One call reaches a qualified engineer, not a call centre. Tell us what is happening and we will tell you honestly whether it is an emergency, a repair or something that can wait until Tuesday.</p>
+    <a class="h-phone h-phone--light" href="tel:+447950486707" aria-label="Call 07950 486707"><span class="h-phone-num">07950 486707</span></a>
+    <a class="h-btn h-btn--ghost" href="/contact/">Or send a message</a>
   </div>
 </section>
 
   </main>
 
-  <footer class="site-footer">
+    <footer class="site-footer">
     <div class="container footer-main">
       <div>
         <img src="/assets/img/logo.png" alt="The British Plumber logo" width="120" height="120" loading="lazy">
@@ -218,10 +241,15 @@
     <div class="footer-bottom"><div class="container">© <span data-year>2026</span> The British Plumber. All rights reserved.</div></div>
   </footer>
 
+  <a class="wa-chat" href="https://wa.me/447950486707?text=Hi%2C%20I%20found%20you%20on%20your%20website.%20I%20need%20help%20with%3A" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5Zm0 1.8a7.7 7.7 0 1 1-4 14.3l-.3-.2-2.6.7.7-2.5-.2-.3A7.7 7.7 0 0 1 12 4.3Zm-3 3.6c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4l-.5-.3-1.8-.9c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.4 6.4 0 0 1-3.2-2.8c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-2c-.2-.5-.4-.5-.6-.5H9Z"/></svg>
+    <span>Chat on WhatsApp</span>
+  </a>
   <div class="call-bar">
     <a class="btn" href="tel:+447950486707">Call now</a>
     <a class="btn btn--outline" href="/contact/">Message us</a>
   </div>
+
   <script>document.querySelector('[data-year]').textContent = new Date().getFullYear();</script>
   <script src="/assets/js/main.js" defer></script>
 </body>

@@ -86,5 +86,16 @@
     "radiatorRoom": "/assets/img/radiatorRoom.jpg",
     "contactHero": "/assets/img/contactHero.png",
     "ogImage": "/assets/img/og-image.jpg"
+  },
+  "google": {
+    "rating": "",
+    "reviewCount": "",
+    "reviewsUrl": "",
+    "writeReviewUrl": "",
+    "reviewsAreFromGoogle": false
+  },
+  "whatsapp": {
+    "number": "447950486707",
+    "message": "Hi, I found you on your website. I need help with:"
   }
 }

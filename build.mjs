@@ -22,6 +22,27 @@ const globals = {
   footerText: esc(cfg.footerText),
 };
 for (const [k, v] of Object.entries(cfg.images)) globals[`img_${k}`] = v;
+// Google reviews panel: shows the rating only when real figures are filled in site.config.json
+{
+  const g = cfg.google || {};
+  const searchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(`${cfg.name} ${cfg.locality}`);
+  const readUrl = g.reviewsUrl || searchUrl;
+  const score = g.rating
+    ? `<div class="h-gscore"><span class="h-gnum">${esc(g.rating)}</span><span class="h-gstars" aria-label="${esc(g.rating)} out of 5 stars">★★★★★</span></div>` +
+      (g.reviewCount ? `<p class="h-gcount">Based on ${esc(g.reviewCount)} Google reviews</p>` : '')
+    : '';
+  const write = g.writeReviewUrl ? `<a class="h-btn h-btn--ghost" href="${esc(g.writeReviewUrl)}" target="_blank" rel="noopener">Leave us a review</a>` : '';
+  globals.googleSummary = `${score}<p class="h-gnote">Customers rate us on Google for turning up on time, fixed prices and tidy work.</p>` +
+    `<div class="h-gbtns"><a class="h-btn h-btn--gold" href="${esc(readUrl)}" target="_blank" rel="noopener">Read all reviews on Google</a>${write}</div>`;
+  globals.reviewSource = g.reviewsAreFromGoogle ? 'Google review' : 'Customer review';
+  globals.reviewsHeading = g.reviewsAreFromGoogle ? 'What our customers say on Google' : 'What our customers say';
+}
+// WhatsApp chat link
+{
+  const w = cfg.whatsapp || {};
+  globals.whatsappHref = `https://wa.me/${w.number}?text=${encodeURIComponent(w.message || '')}`;
+}
+
 
 function parsePage(src) {
   const m = src.match(/^<!--([\s\S]*?)-->\s*/);
@@ -65,7 +86,9 @@ for (const file of pages) {
     serviceLinks,
   };
   vars.content = render(body, vars);
-  fs.writeFileSync(path.join(root, 'public', `${slug}.html`), render(partials.layout, vars));
+  const layout = partials[meta.layout ? `layout-${meta.layout}` : 'layout'];
+  if (!layout) throw new Error(`Missing layout: layout-${meta.layout}`);
+  fs.writeFileSync(path.join(root, 'public', `${slug}.html`), render(layout, vars));
   if (slug !== '404') sitemap.push(vars.canonical);
   console.log(`  built ${slug}.html  →  ${urlPath}`);
 }

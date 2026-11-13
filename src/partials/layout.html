@@ -63,33 +63,7 @@
 {{content}}
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-main">
-      <div>
-        <img src="{{img_logo}}" alt="{{name}} logo" width="120" height="120" loading="lazy">
-        <p>{{footerText}}</p>
-        <div class="footer-contact">
-          <a href="{{telHref}}">{{phone}}</a>
-          <a href="{{landlineHref}}">{{landline}}</a>
-          <a href="{{emailHref}}">{{email}}</a>
-        </div>
-      </div>
-      <div>
-        <h3>Company</h3>
-        <ul><li><a href="/">Home</a></li><li><a href="/about/">About Us</a></li><li><a href="/contact/">Contact Us</a></li></ul>
-      </div>
-      <div>
-        <h3>Services</h3>
-        <ul>{{serviceLinks}}</ul>
-      </div>
-    </div>
-    <div class="footer-bottom"><div class="container">© <span data-year>2026</span> {{name}}. All rights reserved.</div></div>
-  </footer>
-
-  <div class="call-bar">
-    <a class="btn" href="{{telHref}}">Call now</a>
-    <a class="btn btn--outline" href="/contact/">Message us</a>
-  </div>
+  {{> site-footer}}
   <script>document.querySelector('[data-year]').textContent = new Date().getFullYear();</script>
   <script src="/assets/js/main.js" defer></script>
 </body>
