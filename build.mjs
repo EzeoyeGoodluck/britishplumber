@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import crypto from 'node:crypto';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const cfg = JSON.parse(fs.readFileSync(path.join(root, 'site.config.json'), 'utf8'));
@@ -61,6 +62,15 @@ function render(tpl, vars, depth = 0) {
 const pages = fs.readdirSync(path.join(root, 'src/pages')).filter((f) => f.endsWith('.html'));
 const sitemap = [];
 
+// Cache-busting: add a short content hash to CSS/JS links so browsers fetch new versions
+const assetVersion = {};
+for (const a of ['assets/css/styles.css', 'assets/css/home.css', 'assets/js/main.js']) {
+  const f = path.join(root, 'public', a);
+  if (fs.existsSync(f)) assetVersion['/' + a] = crypto.createHash('md5').update(fs.readFileSync(f)).digest('hex').slice(0, 8);
+}
+const versionAssets = (html) => html.replace(/(href|src)="(\/assets\/(?:css|js)\/[\w.-]+\.(?:css|js))"/g,
+  (m, attr, url) => assetVersion[url] ? `${attr}="${url}?v=${assetVersion[url]}"` : m);
+
 for (const file of pages) {
   const { meta, body } = parsePage(read(`src/pages/${file}`));
   const slug = path.basename(file, '.html');
@@ -88,7 +98,7 @@ for (const file of pages) {
   vars.content = render(body, vars);
   const layout = partials[meta.layout ? `layout-${meta.layout}` : 'layout'];
   if (!layout) throw new Error(`Missing layout: layout-${meta.layout}`);
-  fs.writeFileSync(path.join(root, 'public', `${slug}.html`), render(layout, vars));
+  fs.writeFileSync(path.join(root, 'public', `${slug}.html`), versionAssets(render(layout, vars)));
   if (slug !== '404') sitemap.push(vars.canonical);
   console.log(`  built ${slug}.html  →  ${urlPath}`);
 }
