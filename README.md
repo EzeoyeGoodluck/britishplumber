@@ -39,9 +39,9 @@ On vercel.com → **Add New → Project** → import the repo → leave Framewor
 Then **Settings → Domains** → add `britishplumber.uk` and `www.britishplumber.uk`, and set the DNS records Vercel shows you at your domain registrar.
 
 ## 3. Activate the contact form (once)
-The contact form emails messages to **durnovariauk@aol.com** through FormSubmit (free, no account).
+The contact form emails messages to **thebritishplumber@aol.com** through FormSubmit (free, no account).
 1. Once the site is live, send a test message from the Contact page.
-2. FormSubmit emails durnovariauk@aol.com an **activation link**. Click it (check spam).
+2. FormSubmit emails thebritishplumber@aol.com an **activation link**. Click it (check spam).
 3. Every message after that arrives as an email: name, post code, phone, email and message. Pressing **Reply** answers the customer.
 
 To use a different inbox, change `formsubmitAddress` in `site.config.json`. If you activate on the `.vercel.app` address and later switch to `britishplumber.uk`, you may get one more activation email; just click it again.

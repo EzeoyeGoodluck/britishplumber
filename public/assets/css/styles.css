@@ -275,7 +275,7 @@ ul { margin: 0; padding: 0; }
 /* ---------- Footer ---------- */
 .site-footer { background: var(--navy-900); color: rgba(255,255,255,.85); }
 .footer-main { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; padding: 70px 20px 50px; }
-.footer-main img { height: 120px; width: 120px; margin-bottom: 18px; }
+.footer-main img { height: 150px; width: 150px; margin-bottom: 18px; }
 .footer-main h3 { color: #fff; font-size: 1.2rem; margin-bottom: 16px; }
 .footer-main ul { list-style: none; display: grid; gap: 8px; }
 .footer-main ul a { color: rgba(255,255,255,.85); }
